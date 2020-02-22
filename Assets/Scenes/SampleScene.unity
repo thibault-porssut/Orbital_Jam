@@ -266,7 +266,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.01
+  orthographic size: 6.03
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -357,11 +357,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathBlocks:
   - {fileID: 4799886073840172279, guid: a787b21757c69402bae183f1ea3440c6, type: 3}
-  - {fileID: 2219912684356922847, guid: 2017bab8fefd24a868798b5aa6410760, type: 3}
-  - {fileID: 4791443189979469037, guid: bf33effec0f4248aab5b1c3ebc4f2a01, type: 3}
+  - {fileID: 4748834131425861148, guid: a8568d20b7a114982937ca9bc543c4a1, type: 3}
+  - {fileID: 6813124792006811407, guid: 19ddf4e7066044f49b21fc391207293d, type: 3}
+  - {fileID: 269154189931935979, guid: 56cb57991a4184f4d8b6b2db0e8bd97d, type: 3}
+  - {fileID: 1271623645169278960, guid: 95695ee2132bf42eaba61e31456be692, type: 3}
+  - {fileID: 763403871538168457, guid: 92fb94845f4a3499882fce687ed9d468, type: 3}
+  - {fileID: 2989791108823661653, guid: c810d898ed3904436803634681eb340e, type: 3}
+  - {fileID: 1193163474456931116, guid: 83e0471ca89eb438eb01e98073a0bf43, type: 3}
   wall: {fileID: 6156672840579014955, guid: aa7e37677fce744d6ac16e5fa39eff16, type: 3}
   reference: {fileID: 1600422192}
-  speedLevel: 2
+  speedLevel: 6
 --- !u!4 &1656162222
 Transform:
   m_ObjectHideFlags: 0

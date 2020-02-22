@@ -12,6 +12,7 @@ public class PathManager : MonoBehaviour
 
     GameObject[] activePath;
     float wallSize;
+    bool flag;
 
     // Start is called before the first frame update
     void Start()
@@ -42,31 +43,58 @@ public class PathManager : MonoBehaviour
 
     void ControlAndDestroy()
     {
-        if( (-Camera.main.transform.position.x +activePath[0].transform.position.x)> 0.90f*wallSize)
+        if( (-Camera.main.transform.position.x +activePath[0].transform.position.x)> 1.250f*wallSize)
         {
             Destroy(activePath[0]);
-            int randomBlock = Random.Range(0, pathBlocks.Count);
+            int randomBlock = 0;
+            if (!flag)
+            {
+                randomBlock = Random.Range(0, pathBlocks.Count);
+                flag = true;
+
+            }
+            else
+                flag = false;
+
             activePath[0] = Instantiate(pathBlocks[randomBlock], reference);
-            activePath[0].transform.position += new Vector3(-1.90f * wallSize, 0, 0);
-            Debug.Log("w1");
+            activePath[0].transform.position += new Vector3(-1.50f * wallSize, 0, 0);
+           // Debug.Log("w1");
         }
 
-        if ((-Camera.main.transform.position.x + activePath[1].transform.position.x) > 0.90f * wallSize)
+        if ((-Camera.main.transform.position.x + activePath[1].transform.position.x) > 1.250f * wallSize)
         {
-            int randomBlock = Random.Range(0, pathBlocks.Count);
+           
             Destroy(activePath[1]);
+            int randomBlock = 0;
+            if (!flag)
+            {
+                randomBlock = Random.Range(0, pathBlocks.Count);
+                flag = true;
+
+            }
+            else
+                flag = false;
+
             activePath[1] = Instantiate(pathBlocks[randomBlock], reference);
-            activePath[1].transform.position += new Vector3(-1.90f * wallSize, 0, 0);
-            Debug.Log("w2");
+            activePath[1].transform.position += new Vector3(-1.50f * wallSize, 0, 0);
+            //Debug.Log("w2");
         }
 
-        if ((-Camera.main.transform.position.x + activePath[2].transform.position.x) > 0.90f * wallSize)
+        if ((-Camera.main.transform.position.x + activePath[2].transform.position.x) > 1.250f * wallSize)
         {
             Destroy(activePath[2]);
-            int randomBlock = Random.Range(0, pathBlocks.Count);
+            int randomBlock = 0;
+            if (!flag)
+            {
+                randomBlock = Random.Range(0, pathBlocks.Count);
+                flag = true;
+
+            }
+            else
+                flag = false;
             activePath[2] = Instantiate(pathBlocks[randomBlock], reference);
-            activePath[2].transform.position += new Vector3(-1.90f * wallSize, 0, 0);
-            Debug.Log("w3");
+            activePath[2].transform.position += new Vector3(-1.500f * wallSize, 0, 0);
+            //Debug.Log("w3");
         }
     }
 }
