@@ -45,15 +45,17 @@ public class PathManager : MonoBehaviour
         if( (-Camera.main.transform.position.x +activePath[0].transform.position.x)> 0.90f*wallSize)
         {
             Destroy(activePath[0]);
-            activePath[0] = Instantiate(pathBlocks[0], reference);
+            int randomBlock = Random.Range(0, pathBlocks.Count);
+            activePath[0] = Instantiate(pathBlocks[randomBlock], reference);
             activePath[0].transform.position += new Vector3(-1.90f * wallSize, 0, 0);
             Debug.Log("w1");
         }
 
         if ((-Camera.main.transform.position.x + activePath[1].transform.position.x) > 0.90f * wallSize)
         {
+            int randomBlock = Random.Range(0, pathBlocks.Count);
             Destroy(activePath[1]);
-            activePath[1] = Instantiate(pathBlocks[1], reference);
+            activePath[1] = Instantiate(pathBlocks[randomBlock], reference);
             activePath[1].transform.position += new Vector3(-1.90f * wallSize, 0, 0);
             Debug.Log("w2");
         }
@@ -61,7 +63,8 @@ public class PathManager : MonoBehaviour
         if ((-Camera.main.transform.position.x + activePath[2].transform.position.x) > 0.90f * wallSize)
         {
             Destroy(activePath[2]);
-            activePath[2] = Instantiate(pathBlocks[2], reference);
+            int randomBlock = Random.Range(0, pathBlocks.Count);
+            activePath[2] = Instantiate(pathBlocks[randomBlock], reference);
             activePath[2].transform.position += new Vector3(-1.90f * wallSize, 0, 0);
             Debug.Log("w3");
         }
