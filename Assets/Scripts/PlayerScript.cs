@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public float moveSpeed;
-    public static int energy = 0;
-    public static int food = 0;
+    public int energy = 0;
+    public int food = 0;
 
     // Start is called before the first frame update
     void Start()
