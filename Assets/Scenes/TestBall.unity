@@ -266,36 +266,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1204286372468428792, guid: 8ca4acf26d2914e42b57029cbc4b930f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204286372468428792, guid: 8ca4acf26d2914e42b57029cbc4b930f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204286372468428792, guid: 8ca4acf26d2914e42b57029cbc4b930f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204286372468428795, guid: 8ca4acf26d2914e42b57029cbc4b930f,
-        type: 3}
-      propertyPath: m_SpotAngle
-      value: 51
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204286372468428795, guid: 8ca4acf26d2914e42b57029cbc4b930f,
-        type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1204286372468428795, guid: 8ca4acf26d2914e42b57029cbc4b930f,
-        type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3762378795368775621, guid: 8ca4acf26d2914e42b57029cbc4b930f,
         type: 3}
       propertyPath: m_Name

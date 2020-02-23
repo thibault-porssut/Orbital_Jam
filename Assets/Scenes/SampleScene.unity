@@ -336,6 +336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1656162222}
   - component: {fileID: 1656162221}
+  - component: {fileID: 1656162223}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -364,9 +365,14 @@ MonoBehaviour:
   - {fileID: 763403871538168457, guid: 92fb94845f4a3499882fce687ed9d468, type: 3}
   - {fileID: 2989791108823661653, guid: c810d898ed3904436803634681eb340e, type: 3}
   - {fileID: 1193163474456931116, guid: 83e0471ca89eb438eb01e98073a0bf43, type: 3}
+  pilluleEnergy: {fileID: 4129132865709230637, guid: 7eee4d3497f1a4c49aa0631fd49479a1,
+    type: 3}
+  pilluleSize: {fileID: 5837832903079210256, guid: 1ad5947005632904ab3bc99b96177ed7,
+    type: 3}
   wall: {fileID: 6156672840579014955, guid: aa7e37677fce744d6ac16e5fa39eff16, type: 3}
   reference: {fileID: 1600422192}
   speedLevel: 6
+  TEST: {fileID: 0}
 --- !u!4 &1656162222
 Transform:
   m_ObjectHideFlags: 0
@@ -381,3 +387,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1656162223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656162220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be96469694d148708307b4de9091210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
