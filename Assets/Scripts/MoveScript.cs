@@ -15,6 +15,7 @@ public class MoveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Speed * Time.deltaTime, 0f, Speed * Input.GetAxis("Vertical") * Time.deltaTime);
+        transform.Translate(-Speed * Time.deltaTime, 0f, 0f);
     }
+
 }

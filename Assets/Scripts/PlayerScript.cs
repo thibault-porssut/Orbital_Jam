@@ -52,4 +52,8 @@ public class PlayerScript : MonoBehaviour
         //transform.Translate(Speed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, 0f); //Movement only horizontally
         transform.Translate(Speed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, Speed * Input.GetAxis("Vertical") * Time.deltaTime);
     }
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        
+    }
 }
