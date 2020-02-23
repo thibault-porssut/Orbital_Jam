@@ -19,7 +19,22 @@ public class FoodScript : MonoBehaviour
     {
         if(other.name == "Player")
         {
-            other.GetComponent<PlayerScript>().food++;
+            other.GetComponent<PlayerScript>().currentFood ++;
+            if (other.GetComponent<PlayerScript>().currentFood > 6)
+            {
+                other.GetComponent<PlayerScript>().currentFood = 6;
+            }
+
+            if (other.GetComponent<PlayerScript>().currentFood == 1)
+            {
+                other.GetComponent<PlayerScript>().level = 1;
+            } else if (other.GetComponent<PlayerScript>().currentFood == 3)
+            {
+                other.GetComponent<PlayerScript>().level = 2;
+            } else if (other.GetComponent<PlayerScript>().currentFood == 6)
+            {
+                other.GetComponent<PlayerScript>().level = 3;
+            }
             Destroy(gameObject);
         }
     }
